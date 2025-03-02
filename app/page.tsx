@@ -10,6 +10,7 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import ClientOnly from "@/components/ClientOnly";
 
 const Home = () => {
   return (
@@ -17,12 +18,17 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
-        <RecentProjects />
+        <ClientOnly><Grid /></ClientOnly>
+
+        <ClientOnly><RecentProjects /></ClientOnly>
+
+
         <Clients />
         <Experience />
-        <Approach />
-        <Footer />
+        <ClientOnly><Approach /></ClientOnly>
+
+        <ClientOnly><Footer /></ClientOnly>
+
       </div>
     </main>
   );
