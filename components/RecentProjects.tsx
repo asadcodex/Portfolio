@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { FaLocationArrow } from "react-icons/fa6";
 
