@@ -4,6 +4,9 @@ const nextConfig = {
     output: 'export',
     typescript: {
         ignoreBuildErrors: true,
+    },
+    compiler: {
+        styledComponents: true,
     }
 };
 
