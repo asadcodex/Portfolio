@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Asad Raza – Personal Website</title>
+  <meta name="description"
+    content="My name is Asad Raza, I’m an aspiring award-winning web dev / digital designer and creative frontend engineer. I have a passion for all things technology and design, from software engineering & artificial intelligence to UI/UX & 3D graphics." />
+
+  <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Asad Raza – Personal Website" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#f6d4b1" />
+
+  <meta property="og:title" content="Asad Raza – Personal Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/src/img/og.png" />
+  <meta name="og:description"
+    content="My name is Asad Raza, I’m an aspiring award-winning web dev / digital designer and creative frontend engineer. I have a passion for all things technology and design, from software engineering & artificial intelligence to UI/UX & 3D graphics." />
+  <link rel="manifest" href="/manifest.json" />
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body>
+  <div id="home"></div>
+
+  <canvas class="webgl"></canvas>
+
+  <div id="hero-backup">
+    <h3>Hi there, I’m</h3>
+    <h1>Asad</h1>
+    <ul>
+      <li>Software Engineer</li>
+      <li>Creative Developer</li>
+    </ul>
+  </div>
+
+  <nav>
+    <div class="menu-btn">
+      <button class="btn" onclick="toggleMenu()">
+        <svg width="16" height="16">
+          <rect class="st0" width="16" height="3.2" />
+          <rect y="6.4" class="st0" width="16" height="3.2" />
+          <rect y="12.8" class="st0" width="16" height="3.2" />
+        </svg>
+      </button>
+      <div style="display: flex">
+        <a class="btn"
+          href="https://www.linkedin.com/in/asad-raza-182025234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank">
+          <svg width="16" height="16">
+            <path d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+                H0.1V5z" />
+            <path d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+                c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z" />
+          </svg>
+        </a>
+        <a class="btn" href="https://x.com/aslanrxza?t=nMUGyJxLemzNne_nS94i2A&s=35" target="_blank">
+          <svg viewBox="0 0 24 24" width="16" height="14.25">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </svg>
+        </a>
+        <a class="btn" href="https://github.com/asadcodex" target="_blank">
+          <svg width="16" height="16">
+            <path d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-body" onclick="closeMenu()">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#aboutMe" onclick="closeMenu()">About</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div id="tip-scroll">Scroll &#8595;</div>
+  </nav>
+
+  <main>
+    <section>
+      <h1 id="aboutMe">Hi there</h1>
+      <p>
+        My name is Asad Raza, I’m an aspiring award-winning web dev / digital designer and creative frontend engineer. I
+        have a passion for all things technology and design, from software engineering & artificial intelligence to
+        UI/UX & 3D graphics.
+      </p>
+      <p>
+        In addition to my love of technology and design, I am also interested
+        in game development, education, history and economics.
+      </p>
+
+      <p>
+        Below are details of some of the projects I have developed over my
+        three plus years of coding experience.
+      </p>
+    </section>
+
+    <section>
+      <h1 id="projects">Projects</h1>
+      <hr />
+      <h2>Suburbia</h2>
+      <h3>2023-24</h3>
+      <ul class="skills">
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Three.js</li>
+        <li>GSAP</li>
+        <li>3D Modeling</li>
+        <li>React Three Fiber</li>
+      </ul>
+      <p>
+        Suburbia Skateboards is an immersive web application built with Next.js 15 and Three.js that revolutionizes how
+        skateboarding enthusiasts design their perfect board. Users can customize every aspect of their skateboard in
+        real-time 3D, from deck designs and patterns to truck colors, wheel options, and grip tape patterns. The
+        application features smooth animations powered by GSAP, responsive design with Tailwind CSS. With server-side
+        rendering for optimal performance, touch controls for
+        mobile users, Suburbia Skateboards delivers a high-performance, SEO-optimized
+        experience across all devices.
+      </p>
+      <p>
+        Suburbia Skateboards is a cutting-edge 3D skateboard customization web application that allows users to design
+        their dream boards in real-time with interactive 3D visualization.
+      </p>
+      <p><a href="https://suburbiacodex.vercel.app/">suburbia.vercel.app</a></p>
+      <br />
+      <div style="width: 65%; max-width: 65%; margin: 0 auto; overflow: hidden;">
+        <img src="/src/img/01.png" style="width: 100%; height: auto; display: block;" alt="Suburbia screenshot"
+          loading="lazy">
+      </div>
+      <hr />
+      <h2>Fizzi</h2>
+      <h3>2023-24</h3>
+      <ul class="skills">
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Three.js</li>
+        <li>Tailwind CSS</li>
+        <li>GSAP</li>
+        <li>Vercel</li>
+        <li>Web Dev</li>
+      </ul>
+      <p>
+        Fizzi is a captivating web experience that combines cutting-edge 3D visualization with smooth scroll-based
+        animations to create an engaging product showcase for a fictional soda brand. Built with Next.js 14 and
+        Three.js, the site features realistic 3D soda bottle models with custom materials and lighting
+        that users can interact with. The project leverages GSAP for synchronized scroll animations that tell a story,
+        and Tailwind CSS for a fully responsive design across all device
+        sizes. With TypeScript implementation for enhanced code reliability and deployed on Vercel, Fizzi demonstrates
+        how modern web technologies can create memorable brand experiences while maintaining optimal performance and
+        SEO.
+      </p>
+      <p>
+        Fizzi is an immersive 3D-animated landing page for a fictional soda brand that showcases interactive product
+        visualization with modern web technologies.
+      </p>
+      <p><a href="https://fizzicodex.vercel.app/">fizzi.vercel.app</a></p>
+      <br />
+      <div style="width: 65%; max-width: 65%; margin: 0 auto; overflow: hidden;">
+        <img src="/src/img/02.png" style="width: 100%; height: auto; display: block;" alt="Fizzi screenshot"
+          loading="lazy">
+      </div>
+      <hr />
+      <h2>CodeSync</h2>
+      <h3>2023-24</h3>
+      <ul class="skills">
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Stream SDK</li>
+        <li>Convex</li>
+        <li>Clerk</li>
+        <li>Shadcn UI</li>
+        <li>Server Components</li>
+        <li>Video Conferencing</li>
+      </ul>
+      <p>
+        CodeSync is a modern video collaboration platform built with cutting-edge technologies to provide seamless
+        communication experiences for remote teams. Leveraging Next.js with TypeScript for the frontend and Stream SDK
+        for real-time communication, the platform offers crystal-clear video conferencing with multi-participant
+        support, interactive screen sharing of entire screens or specific application windows, and high-quality
+        recording capabilities. The application incorporates Clerk for secure authentication with multiple sign-in
+        methods and role-based authorization, while Convex powers the database and backend for real-time data
+        synchronization. With a responsive design implemented through Tailwind CSS and Shadcn UI components, CodeSync
+        delivers an optimized experience across all devices. The architecture strategically utilizes Server Components
+        for improved performance, Client Components for interactive elements, and Server Actions for secure operations,
+        representing the next generation of remote collaboration tools with user experience at its core.
+      </p>
+      <p>
+        CodeSync is a comprehensive video collaboration platform offering real-time conferencing, screen sharing, and
+        recording capabilities within a sleek, responsive interface.
+      </p>
+      <p><a href="https://codexcodesync.vercel.app/">codesync.vercel.app</a></p>
+      <br />
+      <div style="width: 65%; max-width: 65%; margin: 0 auto; overflow: hidden;">
+        <img src="/src/img/03.png" style="width: 100%; height: auto; display: block;" alt="CodeSync screenshot"
+          loading="lazy">
+      </div>
+      <hr />
+      <h2>Code Codex</h2>
+      <h3>2023-24</h3>
+      <ul class="skills">
+        <li>Next.js</li>
+        <li>TypeScript</li>
+        <li>Convex</li>
+        <li>Clerk</li>
+        <li>VSCode Integration</li>
+        <li>Full-Stack Development</li>
+        <li>Real-Time Systems</li>
+        <li>API Integration</li>
+        <li>Authentication</li>
+      </ul>
+      <p>
+        Code Codex is a cutting-edge online IDE that transforms the developer experience with an extensive suite of
+        features built on modern web technologies. Powered by Next.js 15 with TypeScript for the frontend and Convex for
+        real-time data synchronization, the platform supports coding in 10 different programming languages with instant
+        compilation feedback. The IDE offers a premium coding environment with 5 customizable VSCode-inspired themes,
+        adjustable font sizes, and smart output handling that clearly differentiates between success and error states.
+        Beyond basic coding capabilities, Code Codex provides professional tools including a comprehensive profile
+        dashboard, statistics overview of coding patterns, community code sharing functionality, and advanced search
+        with powerful filtering. With secure authentication through Clerk and a responsive design implemented with
+        Tailwind CSS, the platform delivers a seamless experience for both coding enthusiasts and professionals. Premium
+        users gain access to additional features including webhook integration, and custom themes, making Code Codex a
+        complete solution for modern development workflows.
+      </p>
+      <p>
+        Code Codex is a next-generation online IDE that enables developers to write, test, and share code across 10
+        programming languages with real-time compilation and professional development tools.
+      </p>
+      <p><a href="https://asadcodex.vercel.app/">codecodex.vercel.app</a></p>
+      <br />
+      <div style="width: 65%; max-width: 65%; margin: 0 auto; overflow: hidden;">
+        <img src="/src/img/04.png" style="width: 100%; height: auto; display: block;" alt="Code Codex screenshot"
+          loading="lazy">
+      </div>
+      <hr />
+      <p>
+        This represents just a small selection of the projects I have worked
+        on over the years. I have many more pieces of personal, university and
+        design work.
+      </p>
+    </section>
+
+    <section>
+      <h1 id="contact">Contact</h1>
+      <p style="text-align: center">
+        Reach out on
+        <a href="https://www.linkedin.com/in/asad-raza-182025234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><u><b>LinkedIn</b></u></a>
+      </p>
+    </section>
+  </main>
+
+  <input type="text" id="textarea" readonly />
+  <div id="loading">
+    <h2>Booting...</h2>
+    <div id="loading-bar">
+      <div id="loading-bar-progress"></div>
+    </div>
+    <div id="loading-items">Starting...</div>
+  </div>
+  <footer>
+    <div>Developed + Designed by Asad Raza.</div>
+    <div>Computer design based on the Commodore PET 8296.</div>
+    <div>
+      Built in India on the ancestral land of diverse Indigenous communities who have nurtured this land for millennia.
+      I honor their resilience, wisdom, and cultural heritage.
+    </div>
+    <div>
+      Sovereignty, identity, and traditions endure. This always was and always will be Indigenous land.
+    </div>
+    <div>COPYRIGHT © 2025 Asad Raza.</div>
+  </footer>
+  <script>
+    function closeMenu() {
+      document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementsByTagName("nav")[0];
+      if (nav.classList.contains("active")) {
+        nav.classList.remove(["active"]);
+      } else {
+        nav.classList.add("active");
+      }
+    }
+  </script>
+  <script fetchpriority="high" src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-EDNKHGV4HB");
+    gtag("event", "origin", { name: window.origin });
+  </script>
+</body>
+
+</html>
