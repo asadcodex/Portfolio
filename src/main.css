@@ -206,7 +206,7 @@ p {
   box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
 }
 
-.image {
+/* .image {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -220,7 +220,7 @@ p {
   width: clamp(0px, 95vw, 1200px);
 
   box-shadow: 1px 1px 0px #f6d4b1, 6px 6px 0px rgba(82, 82, 82, 0.25);
-}
+} */
 
 main {
   color: var(--color);
