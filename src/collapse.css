@@ -1,6 +1,10 @@
 .collapse-btn[collapsed="true"] + .collapse-body {
   opacity: 0;
   font-size: 0;
+  height: 0;  /* Add this */
+  margin: 0;  /* Add this */
+  padding: 0; /* Add this */
+  overflow: hidden; /* Add this */
   transition: opacity 0.4s, font-size 0.3s 0.4s;
 }
 
@@ -12,6 +16,9 @@
 .collapse-btn[collapsed="false"] + .collapse-body {
   font-size: inherit;
   opacity: 1;
+  height: auto; /* Add this */
+  margin: initial; /* Add this */
+  padding: initial; /* Add this */
   transition: opacity 0.3s 0.3s, font-size 0.3s;
 }
 
